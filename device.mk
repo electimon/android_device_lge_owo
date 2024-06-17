@@ -19,19 +19,17 @@ $(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Specific overlay
-PRODUCT_PACKAGE_OVERLAYS += device/lge/w7/overlay
+PRODUCT_PACKAGE_OVERLAYS += device/lge/owo/overlay
+
+# Board
+TARGET_BOARD_PLATFORM := msm8610
 
 # Configs
 PRODUCT_COPY_FILES += \
-    device/lge/w7/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml \
-    device/lge/w7/prebuilt/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
-    device/lge/w7/prebuilt/usr/idc/touch_dev.idc:system/usr/idc/touch_dev.idc \
-    device/lge/w7/prebuilt/usr/keylayout/Generic-D4x5.kl:system/usr/keylayout/Generic-D4x5.kl \
-    device/lge/w7/prebuilt/usr/keylayout/Generic-D410.kl:system/usr/keylayout/Generic-D410.kl
-
-# OTA
-PRODUCT_COPY_FILES += \
-    device/lge/w7/releasetools/fixup.sh:install/bin/fixup.sh
+    device/lge/owo/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml \
+    device/lge/owo/prebuilt/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
+    device/lge/owo/prebuilt/usr/idc/touch_dev.idc:system/usr/idc/touch_dev.idc \
+    device/lge/owo/prebuilt/usr/keylayout/Generic-LS620.kl:system/usr/keylayout/Generic-LS620.kl
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
@@ -39,12 +37,8 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 # Common specific options
 BOARD_HAS_QCOM_WCNSS := true
-BOARD_HAS_NFC := true
-
-# IRRC
-BOARD_HAS_LG_IRRC := true
 
 # Inherit from msm8226-common
-$(call inherit-product, device/lge/msm8226-common/msm8226.mk)
-$(call inherit-product, vendor/lge/w7/w7-vendor.mk)
+$(call inherit-product, device/lge/uwuowo-common/uwuowo.mk)
+$(call inherit-product, vendor/lge/owo/owo-vendor.mk)
 
