@@ -1,39 +1,12 @@
-# Adreno fw
-etc/firmware/leia_pfp_470.fw
-etc/firmware/leia_pm4_470.fw
-etc/firmware/a225p5_pm4.fw
-
-# Graphics firmware
-etc/firmware/a225_pm4.fw
-etc/firmware/a300_pm4.fw
-etc/firmware/a330_pm4.fw
-etc/firmware/a225_pfp.fw
-etc/firmware/a300_pfp.fw
-etc/firmware/a330_pfp.fw
-
-# Camera firmware
-etc/firmware/cpp_firmware_v1_1_1.fw
-etc/firmware/cpp_firmware_v1_1_6.fw
-etc/firmware/cpp_firmware_v1_2_0.fw
-
 # ACDB
-etc/ACDB/Bluetooth_cal.acdb
-etc/ACDB/General_cal.acdb
-etc/ACDB/Global_cal.acdb
-etc/ACDB/Handset_cal.acdb
-etc/ACDB/Hdmi_cal.acdb
-etc/ACDB/Headset_cal.acdb
-etc/ACDB/Speaker_cal.acdb
-etc/ACDB/workspaceFile.qwsp
-vendor/lib/libacdbloader.so
-
-# Bluetooth
-bin/bdaddr_loader
-bin/btnvtool
-bin/hci_qcomm_init
-lib/libatd_corelib.so
--lib/libbtnv.so
-lib/liblgftmitem.so
+etc/ACDB/Bluetooth_cal.acdb:etc/acdbdata/Bluetooth_cal.acdb
+etc/ACDB/General_cal.acdb:etc/acdbdata/General_cal.acdb
+etc/ACDB/Global_cal.acdb:etc/acdbdata/Global_cal.acdb
+etc/ACDB/Handset_cal.acdb:etc/acdbdata/Handset_cal.acdb
+etc/ACDB/Hdmi_cal.acdb:etc/acdbdata/Hdmi_cal.acdb
+etc/ACDB/Headset_cal.acdb:etc/acdbdata/Headset_cal.acdb
+etc/ACDB/Speaker_cal.acdb:etc/acdbdata/Speaker_cal.acdb
+etc/ACDB/workspaceFile.qwsp:etc/acdbdata/workspaceFile.qwsp
 
 # Camera
 bin/mm-qcamera-daemon
@@ -76,6 +49,7 @@ vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_imglib_modules.so
 vendor/lib/libmmcamera_imglib.so
 vendor/lib/libadsprpc.so
+vendor/lib/libmmcamera_mt9m114.so
 vendor/lib/libmmcamera2_wnr_module.so
 vendor/lib/libmmcamera2_vpe_module.so
 vendor/lib/libmmcamera_faceproc.so
@@ -95,7 +69,6 @@ vendor/lib/libmmcamera_hi351.so
 vendor/lib/libmmcamera_hi543_eeprom.so
 vendor/lib/libmmcamera_imx111_eeprom.so
 vendor/lib/libmmcamera_imx179_eeprom.so
-vendor/lib/libmmcamera_mt9m114.so
 vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmm-hdcpmgr.so
 lib/libmm-qcamera.so
