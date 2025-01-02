@@ -29,7 +29,8 @@ PRODUCT_COPY_FILES += \
     device/lge/owo/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml \
     device/lge/owo/prebuilt/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
     device/lge/owo/prebuilt/usr/idc/touch_dev.idc:system/usr/idc/touch_dev.idc \
-    device/lge/owo/prebuilt/usr/keylayout/Generic-LS620.kl:system/usr/keylayout/Generic-LS620.kl
+    device/lge/owo/prebuilt/usr/keylayout/Generic-LS620.kl:system/usr/keylayout/Generic-LS620.kl \
+    device/lge/owo/prebuilt/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
