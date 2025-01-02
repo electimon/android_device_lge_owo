@@ -64,11 +64,10 @@ void vendor_load_properties() {
     std::string serial = property_get("ro.boot.serialno");
 
     if (serial.substr(0,6) ==   "LGLS620") {
-        /* D415 */
-        property_override("ro.product.model", "LG-LS620");
+        property_override("ro.product.model", "LGLS620");
         property_override("ro.product.device", "w5c");
-        property_override("ro.build.description", "w7_global_com-user 5.0.2 LRX22G.A1423481010 15040202274a7 release-keys");
-        property_override("ro.build.fingerprint", "lge/w7_global_com/w7ds:5.0.2/LRX22G.A1423481010/15040202274a7:user/release-keys");
+        property_override("ro.build.description", "w5c_spr_us-user 4.4.2 KOT49I.LS620ZV3 LS620ZV3.1401441831 release-keys");
+        property_override("ro.build.fingerprint", "lge/w5c_spr_us/w5c:4.4.2/KOT49I.LS620ZV3/LS620ZV3.1401441831:user/release-keys");
         property_set("persist.radio.multisim.config", "");
         property_set("persist.multisim.config", "");
     } else {
